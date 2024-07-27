@@ -1,12 +1,9 @@
 # Orb_Controller
-#DID:
-"""
+# DID:
 - Đã lấy được thông tin của mỗi IP
 - Đã ping được trong 1 amount of time
 - Lưu trữ các thông tin về từng ping một trong dict
-"""
-#TO-DO:
-"""
+# TO-DO:
 - Hiển thị data lên bokeh
 - Thực hiện flag: -g --> hiển thị graph, -a --> hiển thị table
 - Graph sẽ có dạng: x-axis thì là khoảng thời gian 
@@ -16,4 +13,3 @@
                     Point-to-point graph, khi bấm vào (hover) phải hiển thị ra các thông tin khác (ví dụ như trong info_dict)
 - Table sẽ có dạng csv, bố cục dict thế nào thì trình bày table như thế
 - Sau khi đã xong hết nghiên cứu xem có thể thu được live data không.
-"""
