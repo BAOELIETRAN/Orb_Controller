@@ -95,9 +95,7 @@ def display(args):
         combined_data["color"] = []
         combined_data["uptime"] = []
         information_dict = data_source[str(ip)]["info_dict"]
-        print("nigger ", information_dict)
         pinging_dict = data_source[str(ip)]["ping_dict"]
-        print(pinging_dict)
         orb_name = information_dict["name"]
         combined_data["orb_name"].append(orb_name)
         color = information_dict["color"]
