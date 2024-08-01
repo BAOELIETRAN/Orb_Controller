@@ -27,3 +27,20 @@
 2024-07-31 23:00:14,765 data                           ERROR    Error: 127.0.0.1 : HTTPConnectionPool(host='127.0.0.1', port=80): Max retries exceeded with url: /json/info (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025FC3A0E780>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
 2024-07-31 23:00:14,765 graph                          INFO     getting color for 127.0.0.1
 2024-07-31 23:00:16,786 graph                          INFO     getting uptime for 127.0.0.1
+2024-08-01 09:21:46,266 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=1.0)
+2024-08-01 09:21:46,266 graph                          INFO     getting name for 10.17.192.105
+2024-08-01 09:21:46,337 graph                          INFO     getting color for 10.17.192.105
+2024-08-01 09:21:46,365 graph                          INFO     getting uptime for 10.17.192.105
+2024-08-01 09:22:42,833 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=1.0)
+2024-08-01 09:22:59,021 graph                          INFO     getting name for 10.17.192.105
+2024-08-01 09:23:03,192 graph                          INFO     getting color for 10.17.192.105
+2024-08-01 09:23:04,150 graph                          INFO     getting uptime for 10.17.192.105
+2024-08-01 09:24:22,284 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=1.0)
+2024-08-01 09:24:22,284 graph                          INFO     getting name for 10.17.192.105
+2024-08-01 09:24:22,316 graph                          INFO     getting color for 10.17.192.105
+2024-08-01 09:24:22,355 graph                          INFO     getting uptime for 10.17.192.105
+2024-08-01 09:34:24,580 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=1.0)
+2024-08-01 09:34:24,580 graph                          INFO     getting name for 10.17.192.105
+2024-08-01 09:34:24,618 graph                          INFO     getting color for 10.17.192.105
+2024-08-01 09:34:24,656 graph                          INFO     getting uptime for 10.17.192.105
+2024-08-01 09:34:24,688 graph                          INFO     getting ping info for 10.17.192.105
