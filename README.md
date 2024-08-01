@@ -4,6 +4,8 @@
 - Đã ping được trong 1 amount of time
 - Lưu trữ các thông tin về từng ping một trong dict
 # TO-DO:
+- dùng poetry như build system để quản lý dependencies cho người dùng
+--> auto tải dependencies cho người dùng khi chạy
 - Hiển thị data lên bokeh
 - Thực hiện flag: -g --> hiển thị graph, -a --> hiển thị table
 - Graph sẽ có dạng: x-axis thì là khoảng thời gian 

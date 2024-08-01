@@ -1,0 +1,29 @@
+2024-07-31 11:33:21,894 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=5.0)
+2024-07-31 11:33:39,436 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=5.0)
+2024-07-31 12:03:19,935 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=5.0)
+2024-07-31 22:42:45,806 __main__                       INFO     args are Namespace(filename='.\\ip_add.txt', time=60.0)
+2024-07-31 22:44:37,752 __main__                       INFO     args are Namespace(filename='.\\ip_add.txt', time=1.0)
+2024-07-31 22:46:05,355 __main__                       INFO     args are Namespace(filename='.\\ip_add.txt', time=1.0)
+2024-07-31 22:52:29,613 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=1.0)
+2024-07-31 22:54:07,899 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=1.0)
+2024-07-31 22:55:21,446 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=1.0)
+2024-07-31 22:55:54,835 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=1.0)
+2024-07-31 22:56:22,421 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=1.0)
+2024-07-31 22:57:36,912 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=1.0)
+2024-07-31 22:57:45,491 graph                          INFO     getting name for 10.17.192.105
+2024-07-31 22:58:22,872 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=1.0)
+2024-07-31 22:58:40,367 __main__                       INFO     args are Namespace(filename='.\\ip_add.txt', time=1.0)
+2024-07-31 22:58:40,367 graph                          INFO     getting name for 127.0.0.1
+2024-07-31 22:58:42,401 data                           ERROR    Error: 127.0.0.1 : HTTPConnectionPool(host='127.0.0.1', port=80): Max retries exceeded with url: /json/info (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F862ACC800>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2024-07-31 22:58:42,401 graph                          INFO     getting color for 127.0.0.1
+2024-07-31 22:58:44,422 graph                          INFO     getting uptime for 127.0.0.1
+2024-07-31 22:59:11,502 __main__                       INFO     args are Namespace(filename='.\\ip_add.txt', time=1.0)
+2024-07-31 22:59:11,502 graph                          INFO     getting name for 192.168.1.1
+2024-07-31 22:59:11,518 data                           ERROR    Error: 192.168.1.1 : 404 Client Error: Not Found for url: http://192.168.1.1/json/info
+2024-07-31 22:59:11,519 graph                          INFO     getting color for 192.168.1.1
+2024-07-31 22:59:11,533 graph                          INFO     getting uptime for 192.168.1.1
+2024-07-31 23:00:12,715 __main__                       INFO     args are Namespace(filename='.\\ip_add.txt', time=1.0)
+2024-07-31 23:00:12,715 graph                          INFO     getting name for 127.0.0.1
+2024-07-31 23:00:14,765 data                           ERROR    Error: 127.0.0.1 : HTTPConnectionPool(host='127.0.0.1', port=80): Max retries exceeded with url: /json/info (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025FC3A0E780>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2024-07-31 23:00:14,765 graph                          INFO     getting color for 127.0.0.1
+2024-07-31 23:00:16,786 graph                          INFO     getting uptime for 127.0.0.1

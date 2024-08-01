@@ -1,0 +1,2 @@
+2024-07-31 11:33:21,894 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=5.0)
+2024-07-31 11:33:39,436 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=5.0)
