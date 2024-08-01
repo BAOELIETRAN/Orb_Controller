@@ -1646,3 +1646,20 @@
 2024-08-01 11:55:01,407 graph                          INFO     getting ping info for 10.17.192.105
 2024-08-01 11:55:01,422 graph                          INFO     getting ping info for 10.17.192.105
 2024-08-01 11:55:01,453 graph                          INFO     Getting graph info for 10.17.192.105
+2024-08-01 12:52:06,477 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=0.2)
+2024-08-01 12:52:06,477 graph                          INFO     getting name for 10.17.192.105
+2024-08-01 12:52:06,512 graph                          INFO     getting color for 10.17.192.105
+2024-08-01 12:52:06,547 graph                          INFO     getting uptime for 10.17.192.105
+2024-08-01 12:52:06,578 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-01 12:52:06,599 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-01 12:52:06,618 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-01 12:52:06,632 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-01 12:52:06,650 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-01 12:52:06,664 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-01 12:52:06,682 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-01 12:52:06,698 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-01 12:52:06,713 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-01 12:52:06,731 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-01 12:52:06,752 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-01 12:52:06,767 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-01 12:52:06,784 graph                          INFO     Getting graph info for 10.17.192.105
