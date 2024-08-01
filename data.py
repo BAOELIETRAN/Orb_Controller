@@ -52,7 +52,7 @@ def get_ping(args, ip):
     result["send_time"] = send_time.strftime("%Y-%m-%d %H:%M:%S.%f")
     try:
         #Execute the ping command
-        ping_command = ["ping"] + ["-n", "1"] + [ip]
+        ping_command = ["ping"] + ["-n", "1"] + [str(ip)]
         ping_output = subprocess.run(ping_command, capture_output=True, text=True, timeout=5)
         
         #Record the receive time
