@@ -895,3 +895,15 @@
 2024-08-01 11:08:35,930 graph                          INFO     getting ping info for 10.17.192.105
 2024-08-01 11:08:35,958 graph                          INFO     getting ping info for 10.17.192.105
 2024-08-01 11:08:35,987 graph                          INFO     Getting graph info for 10.17.192.105
+2024-08-01 11:15:08,239 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=0.1)
+2024-08-01 11:15:08,239 graph                          INFO     getting name for 10.17.192.105
+2024-08-01 11:15:08,287 graph                          INFO     getting color for 10.17.192.105
+2024-08-01 11:15:08,318 graph                          INFO     getting uptime for 10.17.192.105
+2024-08-01 11:15:08,350 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-01 11:15:08,368 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-01 11:15:08,385 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-01 11:15:08,402 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-01 11:15:08,421 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-01 11:15:08,435 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-01 11:15:08,449 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-01 11:15:08,470 graph                          INFO     Getting graph info for 10.17.192.105

@@ -29,10 +29,8 @@ from bokeh.palettes import Category10
 from bokeh.models import WheelZoomTool, PanTool, Div
 
 data_source = {}
-# data_lock = Lock()
 
 def get_information(args):
-    #with data_lock:
     for ip in args.ip_list:
         info_dict = {}
         _LOGGER.info(f"getting name for {ip}")
@@ -41,8 +39,6 @@ def get_information(args):
         info_dict["color"] = data.get_wled_color(args, ip)
         _LOGGER.info(f"getting uptime for {ip}")
         info_dict["uptime"] = data.get_uptime(args, ip)
-        # print(info_dict)
-        # print()
         # Ensure the IP key in data_source has both info_dict and an empty ping_dict
         data_source[str(ip)] = {
             "info_dict": info_dict,
@@ -68,14 +64,7 @@ def get_ping_information(args):
             # Update time_fly to the current elapsed time
             time_fly = (datetime.now() - start_time).total_seconds()
         ping_dict["ping_count"] = ping_count
-        # if ip in data_source:
         data_source[str(ip)]["ping_dict"] = ping_dict
-        # else:
-        #     #if the IP was not added, add it
-        #     data_source[str(ip)] = {
-        #         "info_dict": {},
-        #         "ping_dict": ping_dict
-        #     }
 
 def display(args):
     get_information(args)
@@ -116,7 +105,7 @@ def display(args):
         p = figure(title="Ping Speed Graph", x_axis_label='Start-End Time', y_axis_label='Ping Speed (ms)', 
                    x_range=list(combined_data["start_end_time"].categories))
         
-        p.circle('start_end_time', 'speed', size=10, color="color", source=source, legend_field='IP')
+        p.circle('start_end_time', 'speed', size=10, color="red", source=source, legend_field='IP')
 
         hover = HoverTool()
         hover.tooltips = [
