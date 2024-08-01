@@ -114,7 +114,7 @@ def display(args):
         source = ColumnDataSource(data=combined_data)
         p = figure(title="Ping Speed Graph", x_axis_label='Start-End Time', y_axis_label='Ping Speed (ms)', 
                 x_range=combined_data["start_end_time"].categories)
-        p.circle('start_end_time', 'speed', size=10, color='color', source=source, legend_field='IP')
+        p.circle('start_end_time', 'speed', size=10, color="red", source=source, legend_field='IP')
         
         hover = HoverTool()
         hover.tooltips = [
