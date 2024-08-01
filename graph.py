@@ -4,6 +4,7 @@
 # In[1]:
 
 
+from collections import defaultdict
 import logging
 from functools import partial
 from datetime import datetime
@@ -78,48 +79,45 @@ def get_ping_information(args):
 
 def display(args):
     get_information(args)
-    # print()
-    # print(data_source)
     get_ping_information(args)
-    # print(data_source)
+
     for ip in args.ip_list:
-        combined_data = {}
-        combined_data["IP"] = []
-        combined_data["IP"].append(str(ip))
-        combined_data["ping_count"] = []
-        combined_data["start_end_time"] = []
-        combined_data["start_time"] = []
-        combined_data["end_time"] = []
-        combined_data["speed"] = []
-        combined_data["orb_name"] = []
-        combined_data["color"] = []
-        combined_data["uptime"] = []
+        combined_data = defaultdict(list)
+
         information_dict = data_source[str(ip)]["info_dict"]
         pinging_dict = data_source[str(ip)]["ping_dict"]
         orb_name = information_dict["name"]
-        combined_data["orb_name"].append(orb_name)
         color = information_dict["color"]
-        combined_data["color"].append(color)
         uptime = information_dict["uptime"]
-        combined_data["uptime"].append(uptime)
         num_ping = pinging_dict["ping_count"]
+
         for i in range(1, num_ping + 1):
-            combined_data["ping_count"].append(i)
             start_time = pinging_dict[f"ping_{i}"]["start_time"]
             end_time = pinging_dict[f"ping_{i}"]["end_time"]
             speed = pinging_dict[f"ping_{i}"]["speed"]
+
+            combined_data["IP"].append(str(ip))
+            combined_data["ping_count"].append(i)
             combined_data["start_time"].append(start_time)
             combined_data["end_time"].append(end_time)
             combined_data["start_end_time"].append(f"{start_time} -> {end_time}")
             combined_data["speed"].append(speed)
-        # Convert start_end_time to a categorical type
+            combined_data["orb_name"].append(orb_name)
+            combined_data["color"].append(color)
+            combined_data["uptime"].append(uptime)
+
+        # Convert start_end_time to a list of unique values
         combined_data["start_end_time"] = pd.Categorical(combined_data["start_end_time"])
-        _LOGGER.info(f"getting graph info for {ip}")
+
+        _LOGGER.info(f"Getting graph info for {ip}")
+
         source = ColumnDataSource(data=combined_data)
-        p = figure(title="Ping Speed Graph", x_axis_label='Start-End Time', y_axis_label='Ping Speed (ms)', 
-                x_range=combined_data["start_end_time"].categories)
-        p.circle('start_end_time', 'speed', size=10, color="red", source=source, legend_field='IP')
         
+        p = figure(title="Ping Speed Graph", x_axis_label='Start-End Time', y_axis_label='Ping Speed (ms)', 
+                   x_range=list(combined_data["start_end_time"].categories))
+        
+        p.circle('start_end_time', 'speed', size=10, color="color", source=source, legend_field='IP')
+
         hover = HoverTool()
         hover.tooltips = [
             ("IP", "@IP"),
@@ -133,6 +131,7 @@ def display(args):
         ]
         p.add_tools(hover)
         show(p)
+
 #DID:
 """
 - Đã lấy được thông tin của mỗi IP
