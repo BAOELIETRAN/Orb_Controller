@@ -120,6 +120,8 @@ def display(args):
 #TO-DO:
 """
 - Hiển thị data của nhiều ping lên bokeh bằng nhiều graph (khả năng cái này được rồi)
+- Đổi size của plot:
+https://www.youtube.com/watch?v=rHtQDLRb5O8#:~:text=Bokeh's%20Plot%20objects%20have%20various,calling%20the%20figure()%20function.
 - Thực hiện flag: -g --> hiển thị graph, -a --> hiển thị table
 - Table sẽ có dạng csv, bố cục dict thế nào thì trình bày table như thế
 - Sau khi đã xong hết nghiên cứu xem có thể thu được live data không.
