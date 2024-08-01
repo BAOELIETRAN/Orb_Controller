@@ -3,30 +3,18 @@
 
 # In[1]:
 
-
 from collections import defaultdict
 import logging
-from functools import partial
 from datetime import datetime
-import time
-from threading import Thread, Lock
+import numpy as np
 # import import_ipynb
 import data
-import webbrowser
-import threading
-import socket
 import pandas as pd
 
 _LOGGER = logging.getLogger(__name__)
 
-from bokeh.plotting import figure, output_file, show
+from bokeh.plotting import figure, show
 from bokeh.models import HoverTool, ColumnDataSource
-from bokeh.layouts import column
-from bokeh.server.server import Server
-from bokeh.application import Application
-from bokeh.application.handlers.function import FunctionHandler
-from bokeh.palettes import Category10
-from bokeh.models import WheelZoomTool, PanTool, Div
 
 data_source = {}
 
@@ -90,22 +78,22 @@ def display(args):
             combined_data["start_time"].append(start_time)
             combined_data["end_time"].append(end_time)
             combined_data["start_end_time"].append(f"{start_time} -> {end_time}")
-            combined_data["speed"].append(speed)
+            combined_data["speed"].append(0 if np.isnan(speed) else speed)
             combined_data["orb_name"].append(orb_name)
             combined_data["color"].append(color)
             combined_data["uptime"].append(uptime)
+            combined_data["point_color"].append('red' if np.isnan(speed) else "orange")
 
         # Convert start_end_time to a list of unique values
         combined_data["start_end_time"] = pd.Categorical(combined_data["start_end_time"])
-
         _LOGGER.info(f"Getting graph info for {ip}")
 
         source = ColumnDataSource(data=combined_data)
-        
+
         p = figure(title="Ping Speed Graph", x_axis_label='Start-End Time', y_axis_label='Ping Speed (ms)', 
                    x_range=list(combined_data["start_end_time"].categories))
-        
-        p.circle('start_end_time', 'speed', size=10, color="red", source=source, legend_field='IP')
+
+        p.circle('start_end_time', 'speed', size=10, color='point_color', source=source, legend_field='IP')
 
         hover = HoverTool()
         hover.tooltips = [
