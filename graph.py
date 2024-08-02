@@ -17,7 +17,7 @@ _LOGGER = logging.getLogger(__name__)
 from bokeh.plotting import figure, show, output_file, save
 from bokeh.models import HoverTool, ColumnDataSource
 from bokeh.models import ColumnDataSource, DataTable, TableColumn, Panel, Tabs, Div, Button, CustomJS
-from bokeh.layouts import column, row
+from bokeh.layouts import column, row, gridplot
 
 data_source = {}
 
@@ -61,6 +61,8 @@ def display(args):
     get_information(args)
     get_ping_information(args)
 
+    plots = []
+
     for ip in args.ip_list:
         combined_data = defaultdict(list)
 
@@ -87,18 +89,15 @@ def display(args):
             combined_data["uptime"].append(uptime)
             combined_data["point_color"].append('red' if np.isnan(speed) else "orange")
 
-        # Convert start_end_time to a list of unique values
         combined_data["start_end_time"] = pd.Categorical(combined_data["start_end_time"])
-        _LOGGER.info(f"Getting graph info for {ip}")
-
+        
         source = ColumnDataSource(data=combined_data)
 
-        p = figure(title="Ping Speed Graph", x_axis_label='Start-End Time', y_axis_label='Ping Speed (ms)', 
+        p = figure(title=f"Ping Speed Graph for IP {ip}", x_axis_label='Start-End Time', y_axis_label='Ping Speed (ms)', 
                 x_range=list(combined_data["start_end_time"].categories))
 
-        # Add both lines and points to the plot
-        p.line('start_end_time', 'speed', source=source, line_width=2, line_color='blue', legend_field='IP')
-        p.circle('start_end_time', 'speed', size=10, color='point_color', source=source, legend_field='IP')
+        p.line('start_end_time', 'speed', source=source, line_width=2, line_color='blue', legend_label=str(ip))
+        p.circle('start_end_time', 'speed', size=10, color='point_color', source=source, legend_label=str(ip))
 
         hover = HoverTool()
         hover.tooltips = [
@@ -112,7 +111,18 @@ def display(args):
             ("Ping Speed", "@speed ms"),
         ]
         p.add_tools(hover)
-        show(p)
+
+        p.legend.title = "IP Address"
+        p.legend.label_text_font_size = '10pt'
+        p.legend.location = "top_left"
+        p.legend.orientation = "horizontal"
+        
+        plots.append(p)
+
+    # Create a grid layout for the plots
+    grid = gridplot([plots], sizing_mode='stretch_both')
+
+    show(grid)  # This will display all graphs arranged in a grid
 
 def display_table(args):
     get_information(args)
@@ -122,7 +132,7 @@ def display_table(args):
     html_content = """
     <html>
     <head>
-        <title>Data Table</title>
+        <title>Data Table of IP</title>
         <style>
             table {
                 width: 100%;
