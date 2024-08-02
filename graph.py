@@ -11,13 +11,13 @@ import data
 import pandas as pd
 import webbrowser
 import os
+import time
 
 _LOGGER = logging.getLogger(__name__)
 
-from bokeh.plotting import figure, show, output_file, save
-from bokeh.models import HoverTool, ColumnDataSource
-from bokeh.models import ColumnDataSource, DataTable, TableColumn, Panel, Tabs, Div, Button, CustomJS
-from bokeh.layouts import column, row, gridplot
+from bokeh.plotting import figure, show
+from bokeh.models import HoverTool, ColumnDataSource, FixedTicker, PrintfTickFormatter
+from bokeh.layouts import gridplot
 
 data_source = {}
 
@@ -37,6 +37,7 @@ def get_information(args):
         }
 
 def get_ping_information(args):
+    interval = args.args.interval
     for ip in args.ip_list:
         duration = args.args.time
         start_time = datetime.now()
@@ -54,6 +55,7 @@ def get_ping_information(args):
             ping_dict[f"ping_{ping_count}"] = running_dict
             # Update time_fly to the current elapsed time
             time_fly = (datetime.now() - start_time).total_seconds()
+            time.sleep(interval)
         ping_dict["ping_count"] = ping_count
         data_source[str(ip)]["ping_dict"] = ping_dict
 
@@ -72,7 +74,6 @@ def display(args):
         color = information_dict["color"]
         uptime = information_dict["uptime"]
         num_ping = pinging_dict["ping_count"]
-
         for i in range(1, num_ping + 1):
             start_time = pinging_dict[f"ping_{i}"]["start_time"]
             end_time = pinging_dict[f"ping_{i}"]["end_time"]
@@ -93,11 +94,22 @@ def display(args):
         
         source = ColumnDataSource(data=combined_data)
 
-        p = figure(title=f"Ping Speed Graph for IP {ip}", x_axis_label='Start-End Time', y_axis_label='Ping Speed (ms)', 
-                x_range=list(combined_data["start_end_time"].categories))
+        # p = figure(title=f"Ping Speed Graph for IP {ip}", x_axis_label='Start-End Time', y_axis_label='Ping Speed (ms)', 
+        #         x_range=list(combined_data["start_end_time"].categories))
+        
+        p = figure(title=f"Ping Speed Graph for IP {ip}", x_axis_label='Ping Count', y_axis_label='Ping Speed (ms)', 
+                   x_axis_type='linear')
 
-        p.line('start_end_time', 'speed', source=source, line_width=2, line_color='blue', legend_label=str(ip))
-        p.circle('start_end_time', 'speed', size=10, color='point_color', source=source, legend_label=str(ip))
+        # Define tick locations (integers only)
+        ticks = list(range(1, num_ping + 1))
+        p.xaxis.ticker = FixedTicker(ticks=ticks)
+        
+        # Format ticks as integers
+        p.xaxis.formatter = PrintfTickFormatter(format='%d')
+
+        p.line('ping_count', 'speed', source=source, line_width=2, line_color='blue', legend_label=str(ip))
+        p.circle('ping_count', 'speed', size=10, color='point_color', source=source, legend_label=str(ip))
+
 
         hover = HoverTool()
         hover.tooltips = [
@@ -200,22 +212,4 @@ def display_table(args):
     # Open the HTML file in the default web browser
     webbrowser.open(f"file://{os.path.abspath(file_path)}")
 
-#DID:
-"""
-- Đã lấy được thông tin của mỗi IP
-- Đã ping được trong 1 amount of time
-- Lưu trữ các thông tin về từng ping một trong dict
-- Đã vẽ được graph cho từng IP một với y-axis là speed của từng ping,
-    x-axis là thời gian đi và đến của từng ping
-"""
-#TO-DO:
-"""
-- Hiển thị data của nhiều ping lên bokeh bằng nhiều graph (khả năng cái này được rồi)
-- Đổi size của plot:
-https://www.youtube.com/watch?v=rHtQDLRb5O8#:~:text=Bokeh's%20Plot%20objects%20have%20various,calling%20the%20figure()%20function.
-- Thực hiện flag: -g --> hiển thị graph, -a --> hiển thị table
-- Table sẽ có dạng csv, bố cục dict thế nào thì trình bày table như thế
-- Sau khi đã xong hết nghiên cứu xem có thể thu được live data không.
-- Dùng poetry
-"""
 

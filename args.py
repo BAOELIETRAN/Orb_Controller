@@ -49,7 +49,6 @@ class Args:
     args = None
     ip_list = None
 
-
     def __init__(self):
         self.parse_args()
         self.ip_list = process_ip_from_file(self.args.filename)
@@ -72,6 +71,14 @@ class Args:
             "--time-period",
             dest = "time",
             help = "Period of time to poll WLED Orbs",
+            default = 5,
+            type = float,
+        )
+        parser.add_argument(
+            "-i",
+            "--interval",
+            dest = "interval",
+            help = "Amount of time between each ping",
             default = 5,
             type = float,
         )
