@@ -97,12 +97,5 @@ class Args:
         #     help = "Display table of the dead interval",
         #     action = "store_true",
         # )
-        # parser.add_argument(
-        #     "-m",
-        #     "--remote",
-        #     dest="remote",
-        #     help="allow remote access to server, default is False",
-        #     action="store_true",
-        # )
         self.args = parser.parse_args()
 

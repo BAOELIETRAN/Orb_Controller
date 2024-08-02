@@ -8,6 +8,8 @@
 # TO-DO:
 - add thêm tool convert từ rgb sang màu --> hiển thị ra một Link để bấm vào hoặc hover ra màu
 - Hiển thị data của nhiều ping lên bokeh bằng nhiều graph (khả năng cái này được rồi)
+- giãn cái ping ra, kiểu 5 phút gửi một lần (khả năng làm cái flag)
+- nếu có khoảng nào mà hiệu uptime nó âm, tạo Warning
 - Đổi size của plot:
 https://www.youtube.com/watch?v=rHtQDLRb5O8#:~:text=Bokeh's%20Plot%20objects%20have%20various,calling%20the%20figure()%20function.
 - Thực hiện flag: -g --> hiển thị graph, -a --> hiển thị table

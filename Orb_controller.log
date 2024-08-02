@@ -1680,3 +1680,61 @@
 2024-08-01 12:56:51,299 graph                          INFO     getting ping info for 10.17.192.105
 2024-08-01 12:56:51,315 graph                          INFO     getting ping info for 10.17.192.105
 2024-08-01 12:56:51,341 graph                          INFO     Getting graph info for 10.17.192.105
+2024-08-02 09:44:47,464 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=0.5)
+2024-08-02 09:44:47,464 graph                          INFO     getting name for 10.17.192.105
+2024-08-02 09:44:47,563 graph                          INFO     getting color for 10.17.192.105
+2024-08-02 09:44:47,603 graph                          INFO     getting uptime for 10.17.192.105
+2024-08-02 09:44:47,648 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 09:44:47,684 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 09:44:47,701 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 09:44:47,721 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 09:44:47,741 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 09:44:47,763 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 09:44:47,781 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 09:44:47,805 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 09:44:47,824 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 09:44:47,839 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 09:44:47,858 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 09:44:47,877 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 09:44:47,897 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 09:44:47,911 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 09:44:47,931 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 09:44:47,958 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 09:44:47,978 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 09:44:47,995 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 09:44:48,020 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 09:44:48,040 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 09:44:48,058 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 09:44:48,081 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 09:44:48,123 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 09:44:48,139 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 09:44:48,180 graph                          INFO     Getting graph info for 10.17.192.105
+2024-08-02 09:50:31,033 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=0.5)
+2024-08-02 09:50:31,034 graph                          INFO     getting name for 10.17.192.105
+2024-08-02 09:50:31,071 graph                          INFO     getting color for 10.17.192.105
+2024-08-02 09:50:31,100 graph                          INFO     getting uptime for 10.17.192.105
+2024-08-02 09:50:31,137 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 09:50:31,162 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 09:50:31,182 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 09:50:31,197 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 09:50:31,214 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 09:50:31,232 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 09:50:31,249 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 09:50:31,263 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 09:50:31,279 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 09:50:31,297 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 09:50:31,316 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 09:50:31,334 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 09:50:31,351 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 09:50:31,371 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 09:50:31,427 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 09:50:31,464 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 09:50:31,485 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 09:50:31,502 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 09:50:31,520 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 09:50:31,540 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 09:50:31,564 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 09:50:31,581 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 09:50:31,602 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 09:50:31,622 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 09:50:31,640 graph                          INFO     Getting graph info for 10.17.192.105

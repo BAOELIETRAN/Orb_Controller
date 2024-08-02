@@ -92,6 +92,8 @@ def display(args):
         p = figure(title="Ping Speed Graph", x_axis_label='Start-End Time', y_axis_label='Ping Speed (ms)', 
                    x_range=list(combined_data["start_end_time"].categories))
 
+        # Add both lines and points to the plot
+        p.line('start_end_time', 'speed', source=source, line_width=2, line_color='blue', legend_field='IP')
         p.circle('start_end_time', 'speed', size=10, color='point_color', source=source, legend_field='IP')
 
         hover = HoverTool()
