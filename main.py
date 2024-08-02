@@ -18,7 +18,13 @@ def main():
     args.parse_args()
     _LOGGER.info(f"args are {args.args}")
 
-    graph.display(args)
+    if args.args.graph == False and args.args.table == True:
+        graph.display_table(args)
+    elif args.args.graph == True and args.args.table == True:
+        graph.display(args)
+        graph.display_table(args)
+    else:
+        graph.display(args)
 
 if __name__ == '__main__':
     main()

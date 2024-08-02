@@ -48,8 +48,8 @@ def process_fields(input_string):
 class Args:
     args = None
     ip_list = None
-    param = None
-    
+
+
     def __init__(self):
         self.parse_args()
         self.ip_list = process_ip_from_file(self.args.filename)
@@ -75,27 +75,19 @@ class Args:
             default = 5,
             type = float,
         )
-        # parser.add_argument(
-        #     "-r",
-        #     "--rollover",
-        #     dest = "rollover",
-        #     help = "int value to rollover the points default is 20000",
-        #     default = 20000,
-        #     type = int,
-        # )
-        # parser.add_argument(
-        #     "-g",
-        #     "--graph",
-        #     dest = "graph",
-        #     help = "Display graph of the ping",
-        #     action = "store_true",
-        # )
-        # parser.add_argument(
-        #     "-a",
-        #     "--table",
-        #     dest = "table",
-        #     help = "Display table of the dead interval",
-        #     action = "store_true",
-        # )
+        parser.add_argument(
+            "-g",
+            "--graph",
+            dest = "graph",
+            help = "Display graph of the ping",
+            action = "store_true",
+        )
+        parser.add_argument(
+            "-a",
+            "--table",
+            dest = "table",
+            help = "Display table of the dead interval",
+            action = "store_true",
+        )
         self.args = parser.parse_args()
 

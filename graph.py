@@ -9,11 +9,15 @@ from datetime import datetime
 import numpy as np
 import data
 import pandas as pd
+import webbrowser
+import os
 
 _LOGGER = logging.getLogger(__name__)
 
-from bokeh.plotting import figure, show
+from bokeh.plotting import figure, show, output_file, save
 from bokeh.models import HoverTool, ColumnDataSource
+from bokeh.models import ColumnDataSource, DataTable, TableColumn, Panel, Tabs, Div, Button, CustomJS
+from bokeh.layouts import column, row
 
 data_source = {}
 
@@ -90,7 +94,7 @@ def display(args):
         source = ColumnDataSource(data=combined_data)
 
         p = figure(title="Ping Speed Graph", x_axis_label='Start-End Time', y_axis_label='Ping Speed (ms)', 
-                   x_range=list(combined_data["start_end_time"].categories))
+                x_range=list(combined_data["start_end_time"].categories))
 
         # Add both lines and points to the plot
         p.line('start_end_time', 'speed', source=source, line_width=2, line_color='blue', legend_field='IP')
@@ -109,6 +113,82 @@ def display(args):
         ]
         p.add_tools(hover)
         show(p)
+
+def display_table(args):
+    get_information(args)
+    get_ping_information(args)
+
+    # Initialize the HTML string with table headers
+    html_content = """
+    <html>
+    <head>
+        <title>Data Table</title>
+        <style>
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            table, th, td {
+                border: 1px solid black;
+            }
+            th, td {
+                padding: 8px;
+                text-align: left;
+            }
+            th {
+                background-color: #f2f2f2;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Data Table</h2>
+        <table>
+            <tr>
+                <th>IP</th>
+                <th>Info</th>
+                <th>Ping Data</th>
+            </tr>
+    """
+
+    # Iterate over each IP in the data_source
+    for ip in args.ip_list:
+        info_dict = data_source[str(ip)]["info_dict"]
+        ping_dict = data_source[str(ip)]["ping_dict"]
+
+        # Prepare the info string from info_dict
+        info_str = f"Name: {info_dict['name']}, Color: {info_dict['color']}, Uptime: {info_dict['uptime']}"
+
+        # Prepare the ping data string from ping_dict
+        ping_data_str = ""
+        for i in range(1, ping_dict.get("ping_count", 0) + 1):
+            ping_info = ping_dict.get(f"ping_{i}", {})
+            ping_data_str += f"Ping {i}: Speed={ping_info.get('speed', 'N/A')} ms, " \
+                             f"Start={ping_info.get('start_time', 'N/A')}, " \
+                             f"End={ping_info.get('end_time', 'N/A')}\n"
+
+        # Add a row to the HTML table
+        html_content += f"""
+            <tr>
+                <td>{ip}</td>
+                <td>{info_str}</td>
+                <td><pre>{ping_data_str.strip()}</pre></td>
+            </tr>
+        """
+
+    # Close the table and HTML tags
+    html_content += """
+        </table>
+    </body>
+    </html>
+    """
+
+    # Write HTML content to a file
+    file_path = "data_table.html"
+    with open(file_path, "w") as file:
+        file.write(html_content)
+
+    # Open the HTML file in the default web browser
+    webbrowser.open(f"file://{os.path.abspath(file_path)}")
 
 #DID:
 """

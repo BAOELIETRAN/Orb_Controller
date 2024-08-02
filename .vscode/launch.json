@@ -10,7 +10,7 @@
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal",
-            "args": ["-f", "ip_add.txt","-t","1"]
+            "args": ["-f","ip_add.txt","-t","0.1","-a"]
         }
     ]
 }
