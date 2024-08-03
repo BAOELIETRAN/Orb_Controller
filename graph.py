@@ -12,13 +12,16 @@ import pandas as pd
 import webbrowser
 import os
 import time
-import sys
+
+bold_red_yellow_bg = "\033[1;31;43m"
+reset = "\033[0m"
 
 _LOGGER = logging.getLogger(__name__)
 
 from bokeh.plotting import figure, show
 from bokeh.models import HoverTool, ColumnDataSource, FixedTicker, PrintfTickFormatter
 from bokeh.layouts import gridplot
+from bokeh.colors import RGB
 
 data_source = {}
 
@@ -63,7 +66,6 @@ def get_ping_information(args):
 
 def display(args):
     plots = []
-
     for ip in args.ip_list:
         combined_data = defaultdict(list)
 
@@ -86,7 +88,12 @@ def display(args):
             combined_data["orb_name"].append(orb_name)
             combined_data["color"].append(color)
             combined_data["uptime"].append(uptime)
-            combined_data["point_color"].append('red' if np.isnan(speed) else "orange")
+            # Set color based on speed
+            if np.isnan(speed):
+                combined_data["point_color"].append("#FF0000")  # Red color
+            else:
+                r, g, b = color
+                combined_data["point_color"].append(RGB(r, g, b).to_hex())
 
         combined_data["start_end_time"] = pd.Categorical(combined_data["start_end_time"])
         
@@ -218,8 +225,12 @@ def warning(args):
             cur_end_time = ping_dict[f"ping_{num}"]["end_time"]
             if uptime_cur == None or color_cur == None or np.isnan(speed_ping) :
                 # Trigger the flickering warning
-                message = (f"Warning: Uptime and color difference detected for IP {ip} "
+                log = (f"Warning: Uptime and color difference detected for IP {ip} "
                            f"from {cur_start_time} to {cur_end_time}")
-                print(message)
-                sys.stdout.write('\r' + message)  # Write the warning message      
+                message = (f"{bold_red_yellow_bg}Warning: Uptime and color difference detected for IP {ip} {reset}"
+                           f"{bold_red_yellow_bg}from {cur_start_time} to {cur_end_time} {reset}")
+                with open("Error Log.txt", "a") as file:
+                    file.write(log)
+                    file.write("\n-------------------------------------------------------------------------------\n")
+                print(message)    
 
