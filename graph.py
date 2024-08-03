@@ -27,10 +27,6 @@ def get_information(args):
         info_dict = {}
         _LOGGER.info(f"getting name for {ip}")
         info_dict["name"] = data.get_name(args, ip)
-        # _LOGGER.info(f"getting color for {ip}")
-        # info_dict["color"] = data.get_wled_color(args, ip)
-        # _LOGGER.info(f"getting uptime for {ip}")
-        # info_dict["uptime"] = data.get_uptime(args, ip)
         # Ensure the IP key in data_source has both info_dict and an empty ping_dict
         data_source[str(ip)] = {
             "info_dict": info_dict,
@@ -47,27 +43,25 @@ def get_ping_information(args):
         ping_dict = data_source[str(ip)]["ping_dict"]
         while (time_fly < duration):
             _LOGGER.info(f"getting ping info for {ip}")
-            result = data.get_ping(args, ip)
-            uptime = data.get_uptime(args, ip)
-            color = data.get_wled_color(args, ip)
-            ping_count += 1
             running_dict = {}
-            running_dict["color"] = color 
-            running_dict["uptime"] = uptime
+            ping_count += 1
+            result = data.get_ping(args, ip)
             running_dict["speed"] = result["speed"]
             running_dict["start_time"] = result["send_time"]
-            running_dict["end_time"] = result["receive_time"]
+            running_dict["end_time"] = result["receive_time"]  
+            uptime = data.get_uptime(args, ip)
+            color = data.get_wled_color(args, ip)
+            running_dict["color"] = color 
+            running_dict["uptime"] = uptime
             ping_dict[f"ping_{ping_count}"] = running_dict
             # Update time_fly to the current elapsed time
             time_fly = (datetime.now() - start_time).total_seconds()
             time.sleep(interval)
+            print(time_fly)
         ping_dict["ping_count"] = ping_count
         data_source[str(ip)]["ping_dict"] = ping_dict
 
 def display(args):
-    get_information(args)
-    get_ping_information(args)
-
     plots = []
 
     for ip in args.ip_list:
@@ -76,8 +70,6 @@ def display(args):
         information_dict = data_source[str(ip)]["info_dict"]
         pinging_dict = data_source[str(ip)]["ping_dict"]
         orb_name = information_dict["name"]
-        # color = information_dict["color"]
-        # uptime = information_dict["uptime"]
         num_ping = pinging_dict["ping_count"]
         for i in range(1, num_ping + 1):
             start_time = pinging_dict[f"ping_{i}"]["start_time"]
@@ -99,9 +91,6 @@ def display(args):
         combined_data["start_end_time"] = pd.Categorical(combined_data["start_end_time"])
         
         source = ColumnDataSource(data=combined_data)
-
-        # p = figure(title=f"Ping Speed Graph for IP {ip}", x_axis_label='Start-End Time', y_axis_label='Ping Speed (ms)', 
-        #         x_range=list(combined_data["start_end_time"].categories))
         
         p = figure(title=f"Ping Speed Graph for IP {ip}", x_axis_label='Ping Count', y_axis_label='Ping Speed (ms)', 
                    x_axis_type='linear')
@@ -143,9 +132,6 @@ def display(args):
     show(grid)  # This will display all graphs arranged in a grid
 
 def display_table(args):
-    get_information(args)
-    get_ping_information(args)
-
     # Initialize the HTML string with table headers
     html_content = """
     <html>
@@ -221,39 +207,19 @@ def display_table(args):
     webbrowser.open(f"file://{os.path.abspath(file_path)}")
 
 def warning(args):
-    get_information(args)
-    get_ping_information(args)
     for ip in args.ip_list:
         ping_dict = data_source[str(ip)]["ping_dict"]
         ping_count = ping_dict["ping_count"]
-        for num in range(2, ping_count+1):
+        for num in range(1, ping_count+1):
             uptime_cur = ping_dict[f"ping_{num}"]["uptime"]
             color_cur = ping_dict[f"ping_{num}"]["color"]
+            speed_ping = ping_dict[f"ping_{num}"]["speed"]
+            cur_start_time = ping_dict[f"ping_{num}"]["start_time"]
             cur_end_time = ping_dict[f"ping_{num}"]["end_time"]
-            uptime_prev = ping_dict[f"ping_{num - 1}"]["uptime"]
-            color_prev = ping_dict[f"ping_{num - 1}"]["color"]
-            prev_start_time = ping_dict[f"ping_{num}"]["start_time"]
-            if uptime_cur < uptime_prev:
+            if uptime_cur == None or color_cur == None or np.isnan(speed_ping) :
                 # Trigger the flickering warning
-                message = (f"Warning: Uptime difference detected for IP {ip} "
-                           f"from {prev_start_time} to {cur_end_time}")
-                flickering_warning(message)
-            elif color_cur != color_prev:
-                message = (f"Warning: Color difference detected for IP {ip} "
-                           f"from {prev_start_time} to {cur_end_time}")
-                flickering_warning(message)
-            elif uptime_cur < uptime_prev and color_cur != color_prev:
-                message = (f"Warning: Color and Uptime difference detected for IP {ip} "
-                           f"from {prev_start_time} to {cur_end_time}")
-                flickering_warning(message)             
-
-def flickering_warning(message):
-    for _ in range(10):  # Number of flickers
-        sys.stdout.write('\r' + ' ' * len(message))  # Clear the line
-        sys.stdout.flush()
-        time.sleep(0.3)  # Delay in seconds
-        sys.stdout.write('\r' + message)  # Write the warning message
-        sys.stdout.flush()
-        time.sleep(0.3)  # Delay in seconds
-    print()  # Move to the next line after flickering
+                message = (f"Warning: Uptime and color difference detected for IP {ip} "
+                           f"from {cur_start_time} to {cur_end_time}")
+                print(message)
+                sys.stdout.write('\r' + message)  # Write the warning message      
 

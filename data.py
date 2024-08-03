@@ -10,28 +10,10 @@ import requests
 import logging
 import subprocess
 from datetime import datetime, timedelta
+from args import Args
 
+args = Args()
 _LOGGER = logging.getLogger(__name__)
-
-#get any param from JSON file from device
-def get_param(args, ip, paths):
-    result = []
-    url = f"http://{ip}/json/info"
-    response = requests.get(url)
-    response.raise_for_status()
-    json_data = response.json()
-    for path in paths:
-        # Navigate through the JSON structure using each key in the path
-        value = json_data
-        for key in path:
-            value = value.get(key)
-            if value is None:
-                # If any intermediate key is missing, break and append None
-                result.append(None)
-                break
-        else:
-            result.append(value)
-    return result
 
 #get each ping -> 1 ping with start time + end time
 #will create a dict to store val:
@@ -41,7 +23,6 @@ def get_ping(args, ip):
     #ping the ip address
     #get the speed, sending time, receiving time
     #if the ping fails, return np.nan
-    #--> this will cause a line break in the graph on bokeh
     result = {
         "speed": None,
         "send_time": None,
@@ -53,7 +34,7 @@ def get_ping(args, ip):
     try:
         #Execute the ping command
         ping_command = ["ping"] + ["-n", "1"] + [str(ip)]
-        ping_output = subprocess.run(ping_command, capture_output=True, text=True, timeout=5)
+        ping_output = subprocess.run(ping_command, capture_output=True, text=True, timeout=args.args.interval)
         
         #Record the receive time
         receive_time = datetime.now()
@@ -71,7 +52,7 @@ def get_ping(args, ip):
             # result["speed"] = None
     except subprocess.TimeoutExpired:
         # Handle timeout scenario
-        result["receive_time"] = (send_time + timedelta(seconds=5)).strftime("%Y-%m-%d %H:%M:%S.%f")
+        result["receive_time"] = (send_time + timedelta(seconds=args.args.interval)).strftime("%Y-%m-%d %H:%M:%S.%f")
         result["speed"] = numpy.nan
         # result["speed"] = None
     return result
@@ -84,8 +65,9 @@ def get_name(args, ip):
         response.raise_for_status()
         json_data = response.json()
         name = json_data.get('name')
-    except requests.exceptions.RequestException as e:
+    except Exception as e:
         _LOGGER.error(f"Error: {ip} : {e}")
+        print(f"Error fetching name: {e}")
         name = None
     return name
 
@@ -97,8 +79,9 @@ def get_uptime(args, ip):
         response.raise_for_status()
         json_data = response.json()
         uptime = json_data.get('uptime')
-    except request.exceptions.RequestException as e:
+    except Exception as e:
         _LOGGER.error(f"Error: {ip} : {e}")
+        print(f"Error fetching uptime: {e}")
         uptime = None
     return uptime
 
@@ -119,6 +102,7 @@ def get_wled_color(args, ip):
         r, g, b = color
         return r, g, b
     except Exception as e:
+        _LOGGER.error(f"Error: {ip} : {e}")
         print(f"Error fetching color: {e}")
         return None
 

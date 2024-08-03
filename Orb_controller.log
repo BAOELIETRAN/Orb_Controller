@@ -3183,3 +3183,343 @@
 2024-08-02 14:32:01,518 graph                          INFO     getting ping info for 10.17.192.105
 2024-08-02 14:32:04,558 graph                          INFO     getting ping info for 10.17.192.105
 2024-08-02 14:32:07,585 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 15:32:35,672 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=7.0, interval=3.0, graph=True, table=False)
+2024-08-02 15:32:35,673 graph                          INFO     getting name for 10.17.192.105
+2024-08-02 15:32:35,715 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 15:32:38,810 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 15:32:41,895 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 15:32:44,969 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 15:32:48,236 graph                          INFO     getting name for 10.17.192.105
+2024-08-02 15:32:48,276 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 15:32:51,425 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 15:32:54,608 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 15:32:57,687 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 15:37:25,949 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=10.0, interval=3.0, graph=True, table=False)
+2024-08-02 15:37:25,949 graph                          INFO     getting name for 10.17.192.105
+2024-08-02 15:37:25,983 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 15:37:29,070 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 15:37:32,175 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 15:37:35,252 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 15:37:38,343 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 15:37:41,674 graph                          INFO     getting name for 10.17.192.105
+2024-08-02 15:37:41,706 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 15:37:44,995 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 15:37:48,074 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 15:37:51,168 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 15:37:54,255 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 15:38:17,154 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=10.0, interval=3.0, graph=True, table=False)
+2024-08-02 15:38:17,155 graph                          INFO     getting name for 10.17.192.105
+2024-08-02 15:38:17,201 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 15:38:20,276 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 15:38:23,349 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 15:38:26,425 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 16:00:06,565 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=10.0, interval=3.0, graph=True, table=False)
+2024-08-02 16:00:06,565 graph                          INFO     getting name for 10.17.192.105
+2024-08-02 16:00:06,605 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 16:00:09,690 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 16:00:12,766 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 16:00:15,857 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 16:00:18,945 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 16:00:22,182 graph                          INFO     getting name for 10.17.192.105
+2024-08-02 16:00:22,213 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 16:00:25,629 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 16:00:28,709 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 16:00:31,787 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 16:00:34,858 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 16:03:29,674 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=10.0, interval=3.0, graph=True, table=False)
+2024-08-02 16:03:29,674 graph                          INFO     getting name for 10.17.192.105
+2024-08-02 16:03:29,704 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 16:03:32,868 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 16:03:35,951 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 16:03:39,039 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 16:03:42,121 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 16:03:45,434 graph                          INFO     getting name for 10.17.192.105
+2024-08-02 16:03:45,480 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 16:03:48,944 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 16:03:52,025 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 16:03:55,109 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 16:03:58,194 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 16:05:32,555 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=10.0, interval=5, graph=True, table=False)
+2024-08-02 16:05:32,555 graph                          INFO     getting name for 10.17.192.105
+2024-08-02 16:05:32,612 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 16:05:37,693 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 16:05:42,769 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 16:05:48,655 graph                          INFO     getting name for 10.17.192.105
+2024-08-02 16:05:48,685 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 16:05:53,782 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 16:05:58,866 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 16:13:14,975 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=10.0, interval=5, graph=True, table=False)
+2024-08-02 16:13:14,975 graph                          INFO     getting name for 10.17.192.105
+2024-08-02 16:13:15,030 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 16:13:20,114 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 16:13:25,188 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 16:13:44,892 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=1.0, interval=5, graph=True, table=False)
+2024-08-02 16:13:44,893 graph                          INFO     getting name for 10.17.192.105
+2024-08-02 16:13:44,920 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 16:13:50,006 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 16:14:09,088 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=0.0, interval=5, graph=True, table=False)
+2024-08-02 16:14:09,088 graph                          INFO     getting name for 10.17.192.105
+2024-08-02 16:14:18,370 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=10.0, interval=2.0, graph=True, table=False)
+2024-08-02 16:14:18,370 graph                          INFO     getting name for 10.17.192.105
+2024-08-02 16:14:18,399 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 16:14:20,507 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 16:14:22,578 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 16:14:24,658 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 16:14:26,744 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-02 16:14:28,822 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:00:00,239 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=10.0, interval=3.0, graph=True, table=False)
+2024-08-03 09:00:00,239 graph                          INFO     getting name for 10.17.192.105
+2024-08-03 09:00:00,288 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:00:03,375 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:00:06,459 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:00:09,547 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:00:12,623 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:01:04,739 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=10.0, interval=3.0, graph=True, table=False)
+2024-08-03 09:01:04,739 graph                          INFO     getting name for 10.17.192.105
+2024-08-03 09:01:04,782 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:01:07,854 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:01:10,933 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:01:14,011 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:01:17,090 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:01:55,180 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=10.0, interval=3.0, graph=True, table=False)
+2024-08-03 09:01:55,180 graph                          INFO     getting name for 10.17.192.105
+2024-08-03 09:01:55,199 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:01:58,300 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:02:01,370 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:02:04,454 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:02:07,531 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:02:10,872 graph                          INFO     getting name for 10.17.192.105
+2024-08-03 09:02:10,913 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:02:13,989 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:02:17,062 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:02:20,137 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:02:23,220 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:05:14,179 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=10.0, interval=3.0, graph=True, table=False)
+2024-08-03 09:05:14,179 graph                          INFO     getting name for 10.17.192.105
+2024-08-03 09:05:14,219 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:05:17,291 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:05:20,361 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:05:23,439 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:05:26,524 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:07:11,731 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=10.0, interval=3.0, graph=True, table=False)
+2024-08-03 09:07:11,731 graph                          INFO     getting name for 10.17.192.105
+2024-08-03 09:07:14,790 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:07:17,859 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:07:20,938 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:07:24,017 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:07:48,659 data                           ERROR    Error: 10.17.192.105 : HTTPConnectionPool(host='10.17.192.105', port=80): Max retries exceeded with url: /json/info (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x0000015FCA14FEF0>, 'Connection to 10.17.192.105 timed out. (connect timeout=None)'))
+2024-08-03 09:08:09,685 data                           ERROR    Error: 10.17.192.105 : HTTPConnectionPool(host='10.17.192.105', port=80): Max retries exceeded with url: /json/state (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x0000015FCA170BF0>, 'Connection to 10.17.192.105 timed out. (connect timeout=None)'))
+2024-08-03 09:08:38,021 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=20.0, interval=1.0, graph=True, table=False)
+2024-08-03 09:08:38,021 graph                          INFO     getting name for 10.17.192.105
+2024-08-03 09:09:04,264 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=20.0, interval=1.0, graph=True, table=False)
+2024-08-03 09:09:04,264 graph                          INFO     getting name for 10.17.192.105
+2024-08-03 09:09:25,286 data                           ERROR    Error: 10.17.192.105 : HTTPConnectionPool(host='10.17.192.105', port=80): Max retries exceeded with url: /json/info (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x0000019A238FFCB0>, 'Connection to 10.17.192.105 timed out. (connect timeout=None)'))
+2024-08-03 09:09:25,286 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:09:37,190 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:09:38,269 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:09:39,350 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:09:40,436 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:09:41,516 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:09:42,586 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:10:07,647 data                           ERROR    Error: 10.17.192.105 : HTTPConnectionPool(host='10.17.192.105', port=80): Max retries exceeded with url: /json/info (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x0000019A23920BF0>, 'Connection to 10.17.192.105 timed out. (connect timeout=None)'))
+2024-08-03 09:10:28,677 data                           ERROR    Error: 10.17.192.105 : HTTPConnectionPool(host='10.17.192.105', port=80): Max retries exceeded with url: /json/state (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x0000019A23921640>, 'Connection to 10.17.192.105 timed out. (connect timeout=None)'))
+2024-08-03 09:30:40,325 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=20.0, interval=1.0, graph=True, table=False)
+2024-08-03 09:30:40,325 graph                          INFO     getting name for 10.17.192.105
+2024-08-03 09:30:40,366 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:30:41,453 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:30:42,533 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:30:43,618 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:30:44,687 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:30:45,763 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:30:46,841 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:30:47,915 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:31:12,557 data                           ERROR    Error: 10.17.192.105 : HTTPConnectionPool(host='10.17.192.105', port=80): Max retries exceeded with url: /json/info (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x00000233999D03E0>, 'Connection to 10.17.192.105 timed out. (connect timeout=None)'))
+2024-08-03 09:36:27,744 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=20.0, interval=1.0, graph=True, table=False)
+2024-08-03 09:36:27,744 graph                          INFO     getting name for 10.17.192.105
+2024-08-03 09:36:27,793 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:36:28,870 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:36:29,943 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:36:31,021 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:36:32,102 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:36:33,171 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:36:34,245 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:36:46,107 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:36:47,180 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:36:48,253 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:40:55,456 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=20.0, interval=1.0, graph=True, table=False)
+2024-08-03 09:40:55,456 graph                          INFO     getting name for 10.17.192.105
+2024-08-03 09:40:55,503 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:40:56,594 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:40:57,689 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:40:58,780 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:40:59,862 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:41:00,944 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:41:02,031 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:41:03,116 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:41:04,203 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:41:16,071 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:45:38,379 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=20.0, interval=1.0, graph=True, table=False)
+2024-08-03 09:45:38,379 graph                          INFO     getting name for 10.17.192.105
+2024-08-03 09:45:38,422 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:45:39,504 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:45:40,594 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:45:41,673 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:45:42,766 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:45:43,846 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:45:44,916 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:45:45,996 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:45:58,070 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:45:59,136 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:48:25,239 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=20.0, interval=1.0, graph=True, table=False)
+2024-08-03 09:48:25,239 graph                          INFO     getting name for 10.17.192.105
+2024-08-03 09:48:25,279 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:48:26,366 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:48:27,458 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:48:28,532 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:48:45,646 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:49:12,653 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=20.0, interval=1.0, graph=True, table=False)
+2024-08-03 09:49:12,653 graph                          INFO     getting name for 10.17.192.105
+2024-08-03 09:49:12,669 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:49:13,750 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:49:14,819 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:49:15,906 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:49:16,987 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:49:18,064 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:49:19,135 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:49:20,218 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:49:21,306 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:57:39,492 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=20.0, interval=1.0, graph=True, table=False)
+2024-08-03 09:57:39,498 graph                          INFO     getting name for 10.17.192.105
+2024-08-03 09:57:39,534 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:57:40,619 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:57:41,698 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:57:42,793 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:57:43,875 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 09:58:05,941 data                           ERROR    Error: 10.17.192.105 : HTTPConnectionPool(host='10.17.192.105', port=80): Max retries exceeded with url: /json/info (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001DFD0CE0380>, 'Connection to 10.17.192.105 timed out. (connect timeout=None)'))
+2024-08-03 09:58:26,989 data                           ERROR    Error: 10.17.192.105 : HTTPConnectionPool(host='10.17.192.105', port=80): Max retries exceeded with url: /json/state (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001DFD0CE0F20>, 'Connection to 10.17.192.105 timed out. (connect timeout=None)'))
+2024-08-03 09:59:03,697 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=20.0, interval=1.0, graph=True, table=False)
+2024-08-03 10:04:35,144 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=20.0, interval=1.0, graph=True, table=False)
+2024-08-03 10:06:19,438 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=20.0, interval=1.0, graph=True, table=False)
+2024-08-03 10:06:19,438 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:06:20,524 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:06:21,596 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:06:22,672 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:06:23,753 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:06:24,877 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:06:46,946 data                           ERROR    Error: 10.17.192.105 : HTTPConnectionPool(host='10.17.192.105', port=80): Max retries exceeded with url: /json/info (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x00000180226B0050>, 'Connection to 10.17.192.105 timed out. (connect timeout=None)'))
+2024-08-03 10:06:47,981 graph                          INFO     getting name for 10.17.192.105
+2024-08-03 10:07:28,594 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=20.0, interval=1.0, graph=True, table=False)
+2024-08-03 10:07:28,594 graph                          INFO     getting name for 10.17.192.105
+2024-08-03 10:07:28,622 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:07:29,700 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:07:30,781 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:07:31,852 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:07:32,933 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:07:34,007 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:07:35,081 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:07:36,152 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:31:49,106 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=20.0, interval=1.0, graph=True, table=False)
+2024-08-03 10:31:49,107 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:31:50,194 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:31:51,274 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:31:52,346 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:31:53,423 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:31:54,510 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:31:55,586 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:32:12,658 graph                          INFO     getting name for 10.17.192.105
+2024-08-03 10:33:26,462 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=20.0, interval=1.0, graph=True, table=False)
+2024-08-03 10:33:26,463 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:33:27,570 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:33:28,639 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:33:29,732 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:33:30,808 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:33:52,438 data                           ERROR    Error: 10.17.192.105 : HTTPConnectionPool(host='10.17.192.105', port=80): Read timed out. (read timeout=None)
+2024-08-03 10:33:53,480 graph                          INFO     getting name for 10.17.192.105
+2024-08-03 10:44:53,215 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=20.0, interval=1.0, graph=True, table=False)
+2024-08-03 10:45:14,767 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=20.0, interval=1.0, graph=True, table=False)
+2024-08-03 10:45:14,767 graph                          INFO     getting name for 10.17.192.105
+2024-08-03 10:45:14,800 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:45:15,891 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:45:16,965 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:45:18,042 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:45:19,119 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:45:20,198 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:45:21,285 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:45:47,835 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=20.0, interval=1.0, graph=True, table=False)
+2024-08-03 10:45:47,836 graph                          INFO     getting name for 10.17.192.105
+2024-08-03 10:45:47,865 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:45:48,946 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:45:50,021 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:45:51,103 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:45:52,188 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:46:26,136 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=30.0, interval=1.0, graph=True, table=False)
+2024-08-03 10:46:26,136 graph                          INFO     getting name for 10.17.192.105
+2024-08-03 10:46:26,162 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:46:27,255 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:46:28,327 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:46:29,402 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:46:30,491 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:46:39,586 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:46:40,670 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:46:41,772 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:46:42,900 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:46:44,013 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:46:45,116 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:46:46,216 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:46:47,322 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:46:48,393 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:46:49,517 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:46:50,602 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:46:51,692 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:46:52,785 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:46:53,911 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:46:55,001 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:46:56,126 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:53:28,793 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=5.0, interval=1.0, graph=True, table=False)
+2024-08-03 10:53:28,793 graph                          INFO     getting name for 10.17.192.105
+2024-08-03 10:53:28,850 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:53:29,942 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:53:31,028 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:53:32,105 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:53:33,199 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:53:34,268 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:53:54,942 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=5.0, interval=1.0, graph=True, table=True)
+2024-08-03 10:53:54,942 graph                          INFO     getting name for 10.17.192.105
+2024-08-03 10:53:54,969 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:53:56,052 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:53:57,133 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:53:58,221 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:53:59,308 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:54:00,381 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:54:23,197 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=30.0, interval=1.0, graph=True, table=True)
+2024-08-03 10:54:23,197 graph                          INFO     getting name for 10.17.192.105
+2024-08-03 10:54:23,226 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:54:24,320 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:54:25,422 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:54:26,502 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:54:27,584 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:54:28,671 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:54:29,765 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:54:30,850 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:54:31,931 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:54:33,009 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:54:50,119 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:54:51,187 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:54:52,257 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:54:53,331 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:57:26,038 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=30.0, interval=1.0, graph=True, table=True)
+2024-08-03 10:57:26,038 graph                          INFO     getting name for 10.17.192.105
+2024-08-03 10:57:26,078 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:57:27,143 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:57:28,221 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:57:29,319 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:57:30,406 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:57:31,509 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:57:48,613 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:57:49,681 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:57:50,744 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:57:51,817 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:57:52,888 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:57:53,962 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:57:55,030 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-03 10:57:56,113 graph                          INFO     getting ping info for 10.17.192.105
