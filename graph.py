@@ -229,7 +229,7 @@ def warning(args):
                            f"from {cur_start_time} to {cur_end_time}")
                 message = (f"{bold_red_yellow_bg}Warning: Uptime and color difference detected for IP {ip} {reset}"
                            f"{bold_red_yellow_bg}from {cur_start_time} to {cur_end_time} {reset}")
-                with open("Error Log.txt", "a") as file:
+                with open("Error Log.log", "a") as file:
                     file.write(log)
                     file.write("\n-------------------------------------------------------------------------------\n")
                 print(message)    
