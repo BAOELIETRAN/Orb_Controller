@@ -159,6 +159,12 @@ def display_table(args):
             th {
                 background-color: #f2f2f2;
             }
+            .nan-speed {
+                color: red;
+                background-color: yellow;
+                font-weight: bold;
+                font-size: 1.2em;  /* Increase font size */
+            }
         </style>
     </head>
     <body>
@@ -180,24 +186,32 @@ def display_table(args):
         info_str = f"Name: {info_dict['name']}"
 
         # Prepare the ping data string from ping_dict
-        ping_data_str = ""
+        ping_data_rows = []
         for i in range(1, ping_dict.get("ping_count", 0) + 1):
             ping_info = ping_dict.get(f"ping_{i}", {})
-            ping_data_str += f"Ping {i}: Speed={ping_info.get('speed', 'N/A')} ms, " \
-                             f"Start={ping_info.get('start_time', 'N/A')}, " \
-                             f"End={ping_info.get('end_time', 'N/A')}, "\
-                             f"Uptime={ping_info.get('uptime', 'N/A')}, "\
-                             f"Color={ping_info.get('color', 'N/A')}\n"
-
-        # Add a row to the HTML table
+            speed = ping_info.get('speed', 'N/A')
+            if isinstance(speed, float) and pd.isna(speed):  # Check if speed is np.nan
+                row_class = 'nan-speed'
+                speed = 'N/A'
+            else:
+                row_class = ''
+                
+            ping_data_row = f"""
+                <tr class="{row_class}">
+                    <td>Ping {i}</td>
+                    <td>Speed={speed}, Start={ping_info.get('start_time', 'N/A')}, End={ping_info.get('end_time', 'N/A')}, Uptime={ping_info.get('uptime', 'N/A')}, Color={ping_info.get('color', 'N/A')}</td>
+                </tr>
+            """
+            ping_data_rows.append(ping_data_row)
+        # Add the rows to the HTML table
         html_content += f"""
             <tr>
-                <td>{ip}</td>
-                <td>{info_str}</td>
-                <td><pre>{ping_data_str.strip()}</pre></td>
+                <td rowspan="{len(ping_data_rows) + 1}">{ip}</td>
+                <td rowspan="{len(ping_data_rows) + 1}">{info_str}</td>
             </tr>
         """
-
+        html_content += "\n".join(ping_data_rows)
+    
     # Close the table and HTML tags
     html_content += """
         </table>
@@ -212,6 +226,7 @@ def display_table(args):
 
     # Open the HTML file in the default web browser
     webbrowser.open(f"file://{os.path.abspath(file_path)}")
+
 
 def warning(args):
     for ip in args.ip_list:
