@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?text=Orb Controller!🕹&animation=fadeIn&type=waving&color=gradient&height=150"/>
+  <img src="https://capsule-render.vercel.app/api?text=Orb%20Controller!🕹&animation=fadeIn&type=waving&color=gradient&height=150"/>
 </p>
 
 # Orb_Controller
