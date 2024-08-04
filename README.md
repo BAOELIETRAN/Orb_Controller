@@ -2,6 +2,15 @@
   <img src="https://capsule-render.vercel.app/api?text=Orb%20Controller!🕹&animation=twinkling&type=waving&color=gradient&height=150"/>
 </p>
 
+# Orb Controller
+
+Check out the [Orb Controller cyberpunk effect](https://github.com/BAOELIETRAN/README_Effect.git) here!
+
+![Orb Controller Effect](https://yourusername.github.io/your-repository/screenshot.png)
+
+Visit the link above to see the "Orb Controller" effect in action.
+
+
 # Orb_Controller
 # DID:
 - Đã lấy được thông tin của mỗi IP
