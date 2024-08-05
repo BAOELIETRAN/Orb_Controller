@@ -72,8 +72,7 @@ python main.py -f file_name -t time_period -i interval -g isGraph? -a isTable?
 
 After executing the code with the corresponding flags, the graph (or table) will be displayed on a browser. <br/>
 **Remember**: Check the Error Log file to see the abnormalities of the pings.
-# TO-DO:
-- Đổi size của plot:
-https://www.youtube.com/watch?v=rHtQDLRb5O8#:~:text=Bokeh's%20Plot%20objects%20have%20various,calling%20the%20figure()%20function.
-- Sau khi đã xong hết nghiên cứu xem có thể thu được live data không.
-- Dùng poetry
+
+## Further Implementing:
+- Trying to collect and display live data.
+- Use AI to scan for the data and notify users about ping abnormalities.
