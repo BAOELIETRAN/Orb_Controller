@@ -16,7 +16,13 @@ In order to test the Orb, I think the most optimized method is sending consecuti
 And, of course, to ensure the test is successful, I think I need to visualize it in both ways, graph and table:
 - In terms of the graph, I will visualize all the pings on the coordinate axes, with the y-axis being the speed of each ping, and the x-axis being the count of each ping.
 - In terms of the table, I will take all the data of the pings and put that into a table.
-
+## Implementation:
+- Leveraging Poetry to generate a virtual environment and manage dependencies for this project.
+- Utilizing Python and its libraries to send pings with a user-defined interval between each ping in a user-defined amount of time.
+    - Each Ping will be displayed as a node on a graph using Bokeh.
+    - By requesting JSON from the Orb, the node will have the color of the current Orbs' color.
+    - If the Orbs are restarted --> they are disconnected from the Internet --> the Ping will be dead --> that Ping will be displayed with speed = 0 and as a red node on the Graph.
+    - 
 
 
 # DID:
