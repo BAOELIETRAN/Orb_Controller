@@ -26,8 +26,8 @@ And, of course, to ensure the test is successful, I think I need to visualize it
     - Generating warnings every time the Orb can not be reached by ping and storing them in a log file named Error Log.
 - Using HTML and CSS to display all of the Pings data for each IP on a table, coloring the Pings with abnormal activity.
 ## Set Up:
-Highly Recommended: 
-Installing Poetry to create virtual environment and manage dependencies.
+** Highly Recommended **: Installing Poetry to create a virtual environment and manage dependencies.
+
 
 # DID:
 - Đã lấy được thông tin của mỗi IP
