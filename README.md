@@ -4,7 +4,7 @@
 
 
 # Orb_Controller
-##Background:
+## Background:
 Faculty at Oberlin College developed the “Environmental orb”, a colored light that glows different colors depending how much electricity and water are being used in buildings in which it is installed.  Essentially the colors and pulsing patterns of lights displayed on the orb at a given time communicate how much electricity or water is being used by a building at the present time relative to typical use at this time of day. The orb was designed to display two are two color spectra:  red → yellow → green for electricity and pink → purple → aqua for water.  Each minute, the orb receives two numbers through wifi, one for electricity and one for water,  each with one of five values: 0, 1, 2, 3, or 4.   So, for example, if electricity use in the building were at the lowest possible level of use and water consumption was at the highest possible use, the orb would be send a 0 for electricity and a 4 for water.  The orb would respond by alternating between displaying a slowly pulsing green pattern (= lowest level of electricity use) and a rapidly pulsing aqua color (= highest level of water use).  To help distinguish between the two resources, electricity is represented by a heartbeat type of pulsing pattern and water by a shimmering type of pulse.  Over the years we have used several different types of hardware devices to convert the data signal into colored lights.  
 
 
