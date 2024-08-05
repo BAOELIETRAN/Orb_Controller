@@ -25,7 +25,9 @@ And, of course, to ensure the test is successful, I think I need to visualize it
     - If the Orbs are reconnected to the Internet --> the color of the Orb will be orange, and the uptime field in the JSON file will be smaller.
     - Generating warnings every time the Orb can not be reached by ping and storing them in a log file named Error Log.
 - Using HTML and CSS to display all of the Pings data for each IP on a table, coloring the Pings with abnormal activity.
-
+## Set Up:
+Highly Recommended: 
+Installing Poetry to create virtual environment and manage dependencies.
 
 # DID:
 - Đã lấy được thông tin của mỗi IP
