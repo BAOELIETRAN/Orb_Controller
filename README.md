@@ -11,6 +11,10 @@ The Environmental Dashboard team is currently in the process of replacing Arduin
 ## Issues:
 With the previous version of WLED, when the Orbs were restarted, they would be disconnected from the Internet. In order to connect them back to the Internet, Oberlin College faculty needed to do that manually, which was obviously time-consuming and labor-consuming. Therefore, the Environmental Dashboard team is installing a new version of WLED (WLED v2.0), which is believed to make the Orb connect back to the Internet automatically after restarting itself. 
 According to the programmer of WLED v2.0, the Orbs that are installed with this program will be restarted after every 6 hours. Therefore, the team needs a tool that can help them monitor the Orbs to make sure that after 6 hours, the Orbs will be restarted and then reconnected to the Internet.
+## General:
+In order to test the Orb, I think the most optimized method is sending consecutive pings to the Orbs to monitor their status. If the Orbs are restarted and then reconnected to the Internet, the pings can not reach to the Orbs for a while, and then it can function normally.
+
+
 
 
 # DID:
