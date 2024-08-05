@@ -3854,3 +3854,9 @@
 2024-08-03 12:31:23,266 graph                          INFO     getting ping info for 10.17.192.105
 2024-08-03 12:31:24,344 graph                          INFO     getting ping info for 10.17.192.105
 2024-08-03 12:31:25,418 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-04 16:19:47,140 __main__                       INFO     args are Namespace(filename='ip_add.txt', time=20.0, interval=1.0, graph=True, table=False)
+2024-08-04 16:19:47,141 graph                          INFO     getting name for 10.17.192.105
+2024-08-04 16:20:08,170 data                           ERROR    Error: 10.17.192.105 : HTTPConnectionPool(host='10.17.192.105', port=80): Max retries exceeded with url: /json/info (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x0000021D4FC11CA0>, 'Connection to 10.17.192.105 timed out. (connect timeout=None)'))
+2024-08-04 16:20:08,171 graph                          INFO     getting ping info for 10.17.192.105
+2024-08-04 16:20:30,238 data                           ERROR    Error: 10.17.192.105 : HTTPConnectionPool(host='10.17.192.105', port=80): Max retries exceeded with url: /json/info (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x0000021D4FF5E300>, 'Connection to 10.17.192.105 timed out. (connect timeout=None)'))
+2024-08-04 16:20:51,285 data                           ERROR    Error: 10.17.192.105 : HTTPConnectionPool(host='10.17.192.105', port=80): Max retries exceeded with url: /json/state (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x0000021D4FF5EA20>, 'Connection to 10.17.192.105 timed out. (connect timeout=None)'))
