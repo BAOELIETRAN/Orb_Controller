@@ -70,7 +70,7 @@ python main.py -f file_name -t time_period -i interval -g isGraph? -a isTable?
 -g --graph: Display the ping information on a graph<br/>
 -a --table: Display the ping information on a table<br/>
 
-After executing the code with the corresponding flags, the graph (or table) will be displayed on a browser. 
+After executing the code with the corresponding flags, the graph (or table) will be displayed on a browser. <br/>
 **Remember**: Check the Error Log file to see the abnormalities of the pings.
 # TO-DO:
 - Đổi size của plot:
