@@ -41,6 +41,16 @@ To read the information about the virtual environment:
 ```bash
 poetry env info
 ```
+To bring the virtual environment into the current project folder:
+- Delete the virtual environment at the following path:
+  ```bash
+  poetry env info -p
+  ```
+- Add the virtual environment into the folder:
+  ```bash
+  poetry config virtualenvs.in-project true
+  poety install
+  ```
 # DID:
 - Đã lấy được thông tin của mỗi IP
 - Đã ping được trong 1 amount of time
