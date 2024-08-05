@@ -110,7 +110,7 @@ def display(args):
         p.xaxis.formatter = PrintfTickFormatter(format='%d')
 
         p.line('ping_count', 'speed', source=source, line_width=2, line_color='blue', legend_label=str(ip))
-        p.circle('ping_count', 'speed', size=10, color='point_color', source=source, legend_label=str(ip))
+        p.circle('ping_count', 'speed', size=15, color='point_color', source=source, legend_label=str(ip))
 
 
         hover = HoverTool()
