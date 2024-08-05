@@ -13,7 +13,9 @@ With the previous version of WLED, when the Orbs were restarted, they would be d
 According to the programmer of WLED v2.0, the Orbs that are installed with this program will be restarted after every 6 hours. Therefore, the team needs a tool that can help them monitor the Orbs to make sure that after 6 hours, the Orbs will be restarted and then reconnected to the Internet.
 ## General:
 In order to test the Orb, I think the most optimized method is sending consecutive pings to the Orbs to monitor their status. If the Orbs are restarted and then reconnected to the Internet, the pings can not reach to the Orbs for a while, and then it can function normally.
-
+And, of course, to ensure the test is successful, I think I need to visualize it in both ways, graph and table:
+- In terms of the graph, I will visualize all the pings on the coordinate axes, with the y-axis being the speed of each ping, and the x-axis being the count of each ping.
+- In terms of the table, I will take all the data of the pings and put that into a table.
 
 
 
