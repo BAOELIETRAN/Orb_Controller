@@ -30,6 +30,9 @@ And, of course, to ensure the test is successful, I think I need to visualize it
 ```bash
 pip install poetry
 ```
+```bash
+poetry init
+```
 # DID:
 - Đã lấy được thông tin của mỗi IP
 - Đã ping được trong 1 amount of time
