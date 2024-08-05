@@ -65,10 +65,10 @@ After installing poetry and generating the virtual environment, we execute the p
 python main.py -f file_name -t time_period -i interval -g isGraph? -a isTable?
 ```
 -f --file: File that contains IP Addresses of testing Orbs<br/>
--t --time-period: Amount of time for pinging
--i --interval: Interval between each ping
--g --graph: Display the ping information on a graph
--a --table: Display the ping information on a table
+-t --time-period: Amount of time for pinging<br/>
+-i --interval: Interval between each ping<br/>
+-g --graph: Display the ping information on a graph<br/>
+-a --table: Display the ping information on a table<br/>
 
 # DID:
 - Đã lấy được thông tin của mỗi IP
