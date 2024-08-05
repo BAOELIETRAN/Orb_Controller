@@ -37,6 +37,10 @@ Create a virtual environment:
 ```bash
 poetry install
 ```
+To read the information about the virtual environment:
+```bash
+poetry env info
+```
 # DID:
 - Đã lấy được thông tin của mỗi IP
 - Đã ping được trong 1 amount of time
