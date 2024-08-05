@@ -75,4 +75,4 @@ After executing the code with the corresponding flags, the graph (or table) will
 
 ## Further Implementation:
 - Trying to collect and display live data.
-- Use AI to scan for the data and notify users about ping abnormalities.
+- Using AI to scan for the data and notify users about ping abnormalities.
