@@ -73,6 +73,6 @@ python main.py -f file_name -t time_period -i interval -g isGraph? -a isTable?
 After executing the code with the corresponding flags, the graph (or table) will be displayed on a browser. <br/>
 **Remember**: Check the Error Log file to see the abnormalities of the pings.
 
-## Further Implementing:
+## Further Implementation:
 - Trying to collect and display live data.
 - Use AI to scan for the data and notify users about ping abnormalities.
