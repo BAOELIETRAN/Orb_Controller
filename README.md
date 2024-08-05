@@ -27,8 +27,9 @@ And, of course, to ensure the test is successful, I think I need to visualize it
 - Using HTML and CSS to display all of the Pings data for each IP on a table, coloring the Pings with abnormal activity.
 ## Set Up:
 **Highly Recommended**: Installing Poetry to create a virtual environment and manage dependencies.
-
-
+```bash
+pip install poetry
+```
 # DID:
 - Đã lấy được thông tin của mỗi IP
 - Đã ping được trong 1 amount of time
