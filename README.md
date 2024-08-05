@@ -51,6 +51,15 @@ To bring the virtual environment into the current project folder:
   poetry config virtualenvs.in-project true
   poety install
   ```
+- Run the virtual environment:
+  ```bash
+  poetry shell
+  ```
+  or
+  ```bash
+  .\venv\Scripts\activate
+  ```
+  
 # DID:
 - Đã lấy được thông tin của mỗi IP
 - Đã ping được trong 1 amount of time
