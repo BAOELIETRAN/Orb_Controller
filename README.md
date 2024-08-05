@@ -33,6 +33,10 @@ pip install poetry
 ```bash
 poetry init
 ```
+Create a virtual environment:
+```bash
+poetry install
+```
 # DID:
 - Đã lấy được thông tin của mỗi IP
 - Đã ping được trong 1 amount of time
