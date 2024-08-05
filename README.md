@@ -59,6 +59,16 @@ To bring the virtual environment into the current project folder:
   ```bash
   .\venv\Scripts\activate
   ```
+## Execution:
+After installing poetry and generating the virtual environment, we execute the program:
+```bash
+python main.py -f file_name -t time_period -i interval -g isGraph? -a isTable?
+```
+-f --file: File that contains IP Addresses of testing Orbs
+-t --time-period: Amount of time for pinging
+-i --interval: Interval between each ping
+-g --graph: Display the ping information on a graph
+-a --table: Display the ping information on a table
   
 # DID:
 - Đã lấy được thông tin của mỗi IP
