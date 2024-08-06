@@ -1,6 +1,6 @@
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?text=Orb%20Controller!🕹&animation=twinkling&type=waving&color=gradient&height=150"/>
-  ***Graph that display the testing pings on Orb 006***
+  <b>Graph that display the testing pings on Orb 006</b>
 </p>
 
 
