@@ -1,6 +1,5 @@
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?text=Orb%20Controller!🕹&animation=twinkling&type=waving&color=gradient&height=150"/>
-  <b>Graph that display the testing pings on Orb 006</b>
 </p>
 
 
@@ -28,6 +27,7 @@ And, of course, to ensure the test is successful, I think I need to visualize it
 - Using HTML and CSS to display all of the Pings data for each IP on a table, coloring the Pings with abnormal activity.
 <p align="center">
   <img src="https://github.com/user-attachments/assets/d992b8f1-89d9-4a1a-b39f-66b832498676">
+  <b>Graph that display the testing pings on Orb 006</b>
 </p><br/>
 
 ## Set Up:
