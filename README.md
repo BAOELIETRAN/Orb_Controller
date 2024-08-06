@@ -28,6 +28,7 @@ And, of course, to ensure the test is successful, I think I need to visualize it
 <p align="center">
   <img src="https://github.com/user-attachments/assets/d992b8f1-89d9-4a1a-b39f-66b832498676">
 </p><br/>
+
 ## Set Up:
 **Highly Recommended**: Installing Poetry to create a virtual environment and manage dependencies.
 ```bash
