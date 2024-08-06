@@ -27,7 +27,6 @@ And, of course, to ensure the test is successful, I think I need to visualize it
 - Using HTML and CSS to display all of the Pings data for each IP on a table, coloring the Pings with abnormal activity.
 <p align="center">
   <img src="https://github.com/user-attachments/assets/d992b8f1-89d9-4a1a-b39f-66b832498676">
->
 </p>
 ## Set Up:
 **Highly Recommended**: Installing Poetry to create a virtual environment and manage dependencies.
